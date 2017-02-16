@@ -1,0 +1,24 @@
+inherit kf5
+
+NAME="kf5-kholidays"
+VERSION=16.08.3
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE holidays library"
+DESCRIPTION="Holidays calculation library for Qt/KDE"
+
+PKG_NAMES="libKF5Holidays5 libKF5Holidays-devel"
+libKF5Holidays5_CONTENTS="
+	usr/bin/cygKF5Holidays-5.dll
+	usr/lib/qt5/qml/org/kde/kholidays/
+	usr/share/doc/${NAME}
+	usr/share/kf5/libkholidays/
+"
+libKF5Holidays_devel_REQUIRES="libQt5Core-devel libQt5Gui-devel"
+libKF5Holidays_devel_CONTENTS="
+	usr/include/KF5/KHolidays/
+	usr/include/KF5/kholidays_version.h
+	usr/lib/cmake/KF5Holidays/
+	usr/lib/libKF5Holidays.dll.a
+	usr/lib/qt5/mkspecs/modules/qt_KHolidays.pri
+"
