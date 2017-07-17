@@ -1,7 +1,7 @@
 inherit kf5
 
 NAME="kf5-kholidays"
-VERSION=16.08.3
+VERSION=17.04.3
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="KDE holidays library"
@@ -13,6 +13,7 @@ libKF5Holidays5_CONTENTS="
 	usr/lib/qt5/qml/org/kde/kholidays/
 	usr/share/doc/${NAME}
 	usr/share/kf5/libkholidays/
+	usr/share/locale/*/LC_MESSAGES/libkholidays5_qt.qm
 "
 libKF5Holidays_devel_REQUIRES="libQt5Core-devel libQt5Gui-devel"
 libKF5Holidays_devel_CONTENTS="
